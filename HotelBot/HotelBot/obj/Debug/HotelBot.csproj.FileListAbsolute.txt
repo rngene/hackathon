@@ -1,0 +1,78 @@
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Bot Application1.dll.config
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Bot Application1.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Bot Application1.pdb
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Autofac.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Chronic.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.Bot.Builder.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.Bot.Connector.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.Rest.ClientRuntime.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.WindowsAzure.Configuration.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Newtonsoft.Json.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\System.IdentityModel.Tokens.Jwt.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\System.Net.Http.Formatting.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\System.Web.Http.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\System.Web.Http.WebHost.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Autofac.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.Bot.Builder.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.Bot.Connector.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.Rest.ClientRuntime.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Microsoft.WindowsAzure.Configuration.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\Newtonsoft.Json.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\System.IdentityModel.Tokens.Jwt.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\System.Net.Http.Formatting.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\System.Web.Http.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\System.Web.Http.WebHost.xml
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\en\Microsoft.Bot.Builder.resources.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\es\Microsoft.Bot.Builder.resources.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\obj\Debug\HotelBot.csprojResolveAssemblyReference.cache
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\obj\Debug\Bot Application1.dll
+c:\users\gene\documents\visual studio 2015\Projects\HotelBot\HotelBot\obj\Debug\Bot Application1.pdb
+C:\dev\HotelBot\HotelBot\bin\Bot Application1.dll.config
+C:\dev\HotelBot\HotelBot\bin\Bot Application1.dll
+C:\dev\HotelBot\HotelBot\bin\Bot Application1.pdb
+C:\dev\HotelBot\HotelBot\bin\Autofac.dll
+C:\dev\HotelBot\HotelBot\bin\Chronic.dll
+C:\dev\HotelBot\HotelBot\bin\Microsoft.Bot.Builder.dll
+C:\dev\HotelBot\HotelBot\bin\Microsoft.Bot.Connector.dll
+C:\dev\HotelBot\HotelBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\dev\HotelBot\HotelBot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\dev\HotelBot\HotelBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\dev\HotelBot\HotelBot\bin\Newtonsoft.Json.dll
+C:\dev\HotelBot\HotelBot\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\dev\HotelBot\HotelBot\bin\System.Net.Http.Formatting.dll
+C:\dev\HotelBot\HotelBot\bin\System.Web.Http.dll
+C:\dev\HotelBot\HotelBot\bin\System.Web.Http.WebHost.dll
+C:\dev\HotelBot\HotelBot\bin\Autofac.xml
+C:\dev\HotelBot\HotelBot\bin\Microsoft.Bot.Builder.xml
+C:\dev\HotelBot\HotelBot\bin\Microsoft.Bot.Connector.xml
+C:\dev\HotelBot\HotelBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\dev\HotelBot\HotelBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\dev\HotelBot\HotelBot\bin\Microsoft.Rest.ClientRuntime.xml
+C:\dev\HotelBot\HotelBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\dev\HotelBot\HotelBot\bin\Newtonsoft.Json.xml
+C:\dev\HotelBot\HotelBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\dev\HotelBot\HotelBot\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\dev\HotelBot\HotelBot\bin\System.Net.Http.Formatting.xml
+C:\dev\HotelBot\HotelBot\bin\System.Web.Http.xml
+C:\dev\HotelBot\HotelBot\bin\System.Web.Http.WebHost.xml
+C:\dev\HotelBot\HotelBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\dev\HotelBot\HotelBot\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\dev\HotelBot\HotelBot\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\dev\HotelBot\HotelBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\dev\HotelBot\HotelBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\dev\HotelBot\HotelBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\dev\HotelBot\HotelBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\dev\HotelBot\HotelBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\dev\HotelBot\HotelBot\obj\Debug\Bot Application1.dll
+C:\dev\HotelBot\HotelBot\obj\Debug\Bot Application1.pdb
+C:\dev\HotelBot\HotelBot\obj\Debug\HotelBot.csprojResolveAssemblyReference.cache

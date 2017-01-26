@@ -1,0 +1,17 @@
+﻿@model BotClient.Models.Chat
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    <p>@Html.Raw(Model.ChatResponse)</p>
+    <hr />
+    @Html.TextBoxFor(m => m.ChatMessage,
+    new { style = "width:600px" })
+    <input type="submit" value="Send" />
+   
+}
+<script>
+    $(document).ready(function () {
+        $("#ChatMessage").focus();
+    });
+</script>
+<br />
+
