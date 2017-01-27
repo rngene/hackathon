@@ -66,7 +66,7 @@ namespace HotelBot.Dialogs
         {
             var token = await item;
 
-            return Chain.Return("Thank you. How can I continue helping? (restaurant reservations, room service or child care)");
+            return Chain.Return("Thank you. Your order will be delivered in 15 minutes. How can I continue helping? (restaurant reservations, room service or child care)");
         }
 
         private async static Task<IDialog<string>> AfterChildCare(IBotContext context, IAwaitable<object> item)

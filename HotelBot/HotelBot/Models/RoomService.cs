@@ -48,7 +48,7 @@ namespace HotelBot.Models
         public List<BreakfastBites> BreakfastBites;
         public Salads Salads;
         public List<BreakfastBites> Beverages;
-        public Beers Beer;
+        public Beers? Beer;
 
         public static IForm<RoomService> BuildForm()
         {
