@@ -24,7 +24,14 @@ namespace HotelBot
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => HotelBotDialog.dialog);
+                if (activity.From == null || String.IsNullOrEmpty(activity.From.Name) || !activity.From.Name.ToLower().Contains("bco1"))
+                {
+                    await Conversation.SendAsync(activity, () => CruiseSearchDialog.dialog);
+                }
+                else
+                {
+                    await Conversation.SendAsync(activity, () => HotelBotDialog.dialog);
+                }
                 //await Conversation.SendAsync(activity, MakeLuisDialog);
             }
             else

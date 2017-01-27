@@ -176,3 +176,4 @@ C:\dev\Hackathon\BotClient\BotClient\bin\Microsoft.Owin.Security.Twitter.xml
 C:\dev\Hackathon\BotClient\BotClient\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\dev\Hackathon\BotClient\BotClient\obj\Debug\BotClient.dll
 C:\dev\Hackathon\BotClient\BotClient\obj\Debug\BotClient.pdb
+C:\dev\Hackathon\BotClient\BotClient\obj\Debug\BotClient.csprojResolveAssemblyReference.cache

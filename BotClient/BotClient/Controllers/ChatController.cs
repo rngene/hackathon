@@ -17,7 +17,7 @@ namespace WebApplication2.Controllers
         [Route("post")]
         public async Task<Chat> Post(ChatMessage message)
         {
-            System.Web.HttpContext.Current.Session["User"] = "ramon";
+            System.Web.HttpContext.Current.Session["User"] = message.Username;
             var talker = new BotTalker();
             //var objChat = await talker.TalkToTheBot(message.Text);
 

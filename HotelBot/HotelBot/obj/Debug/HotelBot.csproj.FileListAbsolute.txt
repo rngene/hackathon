@@ -119,3 +119,4 @@ C:\dev\Hackathon\HotelBot\HotelBot\bin\ru\Microsoft.Bot.Builder.resources.dll
 C:\dev\Hackathon\HotelBot\HotelBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
 C:\dev\Hackathon\HotelBot\HotelBot\obj\Debug\Bot Application1.dll
 C:\dev\Hackathon\HotelBot\HotelBot\obj\Debug\Bot Application1.pdb
+C:\dev\Hackathon\HotelBot\HotelBot\obj\Debug\HotelBot.csprojResolveAssemblyReference.cache

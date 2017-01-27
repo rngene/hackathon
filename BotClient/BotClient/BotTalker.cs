@@ -36,9 +36,15 @@ namespace BotClient
             }
             // Use the text passed to the method (by the user)
             // to create a new message
+
+            var user = "facebook";
+            if (System.Web.HttpContext.Current.Session["User"] != null)
+            {
+                user = System.Web.HttpContext.Current.Session["User"].ToString();
+            } 
             Message message = new Message
             {
-                FromProperty = System.Web.HttpContext.Current.Session["User"].ToString(),
+                FromProperty = user,
                 Text = paramMessage
             };
             // Post the message to the Bot
