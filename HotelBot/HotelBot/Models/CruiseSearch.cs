@@ -75,9 +75,12 @@ namespace HotelBot.Models
         {
             OnCompletionAsyncDelegate<CruiseSearch> processOrder = async (context, state) =>
             {
-                var srchMsg = CruiseSearchApi.Search(state);
+                var srchMsgs = CruiseSearchApi.Search(state);
                 var msg = context.MakeMessage();
-                msg.Text = srchMsg;
+                msg.Text = srchMsgs[0];
+                await context.PostAsync(msg);
+                msg = context.MakeMessage();
+                msg.Text = srchMsgs[1];
                 await context.PostAsync(msg);
             };
 
