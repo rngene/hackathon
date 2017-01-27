@@ -76,3 +76,46 @@ C:\dev\HotelBot\HotelBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
 C:\dev\HotelBot\HotelBot\obj\Debug\Bot Application1.dll
 C:\dev\HotelBot\HotelBot\obj\Debug\Bot Application1.pdb
 C:\dev\HotelBot\HotelBot\obj\Debug\HotelBot.csprojResolveAssemblyReference.cache
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Bot Application1.dll.config
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Bot Application1.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Bot Application1.pdb
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Autofac.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Chronic.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.Bot.Builder.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.Bot.Connector.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.Cognitive.LUIS.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.Rest.ClientRuntime.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Newtonsoft.Json.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\RestSharp.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\System.Net.Http.Formatting.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\System.Web.Http.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\System.Web.Http.WebHost.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Twilio.Api.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Autofac.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.Bot.Builder.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.Bot.Connector.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.IdentityModel.Protocol.Extensions.pdb
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.Rest.ClientRuntime.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Newtonsoft.Json.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\dev\Hackathon\HotelBot\HotelBot\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\System.Net.Http.Formatting.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\System.Web.Http.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\System.Web.Http.WebHost.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Twilio.Api.pdb
+C:\dev\Hackathon\HotelBot\HotelBot\bin\Twilio.Api.xml
+C:\dev\Hackathon\HotelBot\HotelBot\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\dev\Hackathon\HotelBot\HotelBot\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\dev\Hackathon\HotelBot\HotelBot\obj\Debug\Bot Application1.dll
+C:\dev\Hackathon\HotelBot\HotelBot\obj\Debug\Bot Application1.pdb
