@@ -9,7 +9,6 @@ namespace HotelBot.Models
 {
     public enum Destination
     {
-        NewEngland,
         Alaska,
         Caribbean,
         Bahamas,
@@ -19,11 +18,10 @@ namespace HotelBot.Models
 
     public enum Port
     {
-        LosAngeles,
-        Miami,
-        FortLauderdale,
-        Tampa,
-        Seattle
+        LosAngeles=0,
+        Miami=1,
+        FortLauderdale=2,
+        Tampa=3
     }
 
     public enum Month
@@ -42,9 +40,17 @@ namespace HotelBot.Models
         Dec
     }
 
+    public enum Year
+    {
+        _2016,
+        _2017,
+        _2018,
+        _2019
+    }
+
     public enum NumGuests
     {
-        one,two,three,four,five
+        one=1,two=2,three=3,four=4,five=5
     }
 
     [Serializable]
@@ -60,13 +66,16 @@ namespace HotelBot.Models
         public NumGuests Guests;
 
         [Prompt("Which {&} would you like to travel? {||}", ChoiceFormat = "{1}")]
+        public Year Year;
+
+        [Prompt("Which {&} would you like to travel? {||}", ChoiceFormat = "{1}")]
         public Month Month;
 
         public static IForm<CruiseSearch> BuildForm()
         {
             OnCompletionAsyncDelegate<CruiseSearch> processOrder = async (context, state) =>
             {
-                var srchMsg = CruiseSearchApi.Search();
+                var srchMsg = CruiseSearchApi.Search(state);
                 var msg = context.MakeMessage();
                 msg.Text = srchMsg;
                 await context.PostAsync(msg);
