@@ -23,7 +23,7 @@ namespace WebApplication2.Controllers
 
             //var response = new ChatResponse { Text = objChat.ChatResponse };
          
-           return await talker.TalkToTheBot(message.Text);
+           return await talker.TalkToTheBot(message.Text, message.Username, message.Conversation);
         }
 
     }

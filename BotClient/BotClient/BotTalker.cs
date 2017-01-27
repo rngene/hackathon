@@ -17,13 +17,14 @@ namespace BotClient
         private static string botId =
             "rngene1";
 
-        public async Task<Chat> TalkToTheBot(string paramMessage)
+        public async Task<Chat> TalkToTheBot(string paramMessage, string userName, string conversationId)
         {
             // Connect to the DirectLine service
             DirectLineClient client = new DirectLineClient(directLineSecret);
             // Try to get the existing Conversation
             Conversation conversation =
                 System.Web.HttpContext.Current.Session["conversation"] as Conversation;
+
             // Try to get an existing watermark 
             // the watermark marks the last message we received
             string watermark =
@@ -44,8 +45,8 @@ namespace BotClient
             } 
             Message message = new Message
             {
-                FromProperty = user,
-                Text = paramMessage
+                FromProperty = userName,
+                Text = paramMessage,
             };
             // Post the message to the Bot
             await client.Conversations.PostMessageAsync(conversation.ConversationId, message);

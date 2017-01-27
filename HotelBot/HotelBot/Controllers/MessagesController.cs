@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using Microsoft.Bot.Builder.Dialogs;
 using HotelBot.Dialogs;
 using HotelBot.Models;
+using Twilio;
 
 namespace HotelBot
 {
@@ -24,8 +25,21 @@ namespace HotelBot
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                if (activity.From == null || String.IsNullOrEmpty(activity.From.Name) || !activity.From.Name.ToLower().Contains("bco1"))
+                //if (activity.From != null && String.IsNullOrEmpty(activity.From.Id))
+                //    {
+                //    var accountSid = "ACbb85ffd271203038fea0db9c0d06d8c6"; // Your Account SID from www.twilio.com/console
+                //    var authToken = "39880d052d1a2048f321d0725dc6d6ae";  // Your Auth Token from www.twilio.com/console
+
+                //    var twilio = new TwilioRestClient(accountSid, authToken);
+                //    var message = twilio.SendMessage(
+                //        "+17862570432", // From (Replace with your Twilio number)
+                //        "7863271555", // To (Replace with your phone number)
+                //        activity.From.Name
+                //        );
+                //}
+                if (activity.From == null || String.IsNullOrEmpty(activity.From.Id) || !activity.From.Id.ToLower().Contains("bco1"))
                 {
+
                     await Conversation.SendAsync(activity, () => CruiseSearchDialog.dialog);
                 }
                 else
