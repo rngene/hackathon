@@ -1,91 +1,96 @@
-﻿using Microsoft.Bot.Builder.FormFlow;
+﻿using HotelBot.Domain;
+using Microsoft.Bot.Builder.FormFlow;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace HotelBot.Dialogs
+namespace HotelBot.Models
 {
+    public enum Destination
+    {
+        NewEngland,
+        Alaska,
+        Caribbean,
+        Bahamas,
+        Europe
+    }
+
+
+    public enum Port
+    {
+        LosAngeles,
+        Miami,
+        FortLauderdale,
+        Tampa,
+        Seattle
+    }
+
+    public enum Month
+    {
+        Jan,
+        Feb,
+        Mar,
+        Apr,
+        May,
+        Jun,
+        Jul,
+        Aug,
+        Sep,
+        Oct,
+        Nov,
+        Dec
+    }
+
+    public enum NumGuests
+    {
+        one,two,three,four,five
+    }
+
     [Serializable]
     public class CruiseSearch
     {
-        public string Destination;
+        [Prompt("What {&} would you like to sail from (you can tell me a name or a number? {||}",ChoiceFormat = "{1}")]
+        public Port Port;
 
+        [Prompt("What {&} would you like to go to (you can tell me a name or a number? {||}",ChoiceFormat = "{1}")]
+        public Destination Destination;
+
+        [Prompt("For how many people? {||}", ChoiceFormat = "{1}")]
+        public NumGuests Guests;
+
+        [Prompt("Which {&} would you like to travel? {||}", ChoiceFormat = "{1}")]
+        public Month Month;
 
         public static IForm<CruiseSearch> BuildForm()
         {
-            return new FormBuilder<CruiseSearch>()
+            OnCompletionAsyncDelegate<CruiseSearch> processOrder = async (context, state) =>
+            {
+                var srchMsg = CruiseSearchApi.Search();
+                var msg = context.MakeMessage();
+                msg.Text = srchMsg;
+                await context.PostAsync(msg);
+            };
+
+            return new FormBuilder<CruiseSearch>().OnCompletion(processOrder)
+                //.Field(nameof(Port))
+                //.Field(nameof(Destination))
+                //.Field(nameof(NumberOfPeople),
+                //            validate: async (state, value) =>
+                //            { = 
+                //                var result = new ValidateResult { IsValid = true };
+                //                //var values = ((int)value);
+                //                //value.ToString();
+                //                var people = int.Parse(value.ToString());
+                //                if (people >= 8)
+                //                {
+                //                    result.Feedback = "Too many people!";
+                //                    result.IsValid = false;
+                //                }
+                //                return result;
+                //            })
+                //.AddRemainingFields()
                 .Build();
         }
     }
 }
-/**
- *using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Script.Serialization;
-using Newtonsoft.Json;
-
-namespace CallApi
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-            string url =
-                String.Format(
-                    "http://www.carnival.com/bookingengine/api/search?exclDetails=false&layout=grid&numAdults=2&numChildren=0&pageNumber=1&pageSize=8&showBest=true&sort=FromPrice&useSuggestions=true");
-            using (WebClient client = new WebClient())
-            {
-                string json = client.DownloadString(url);
-                var results = (new JavaScriptSerializer()).Deserialize<SearchResults>(json);
-                JavaScriptSerializer json_serializer = new JavaScriptSerializer();
-
-
-            }
-        }
-
-        public class SearchResults
-        {
-            public Result Results { get; set; }
-        }
-
-        public class Result
-        {
-            public List<Itinerary> Itineraries { get; set; }
-        }
-
-        public class Itinerary
-        {
-            public List<Sailing> Sailings { get; set; }
-        }
-
-        public class Sailing
-        {
-            public DateTime ArrivalDate { get; set; }
-            public DateTime DepartureDate { get; set; }
-            public Rooms Rooms { get; set; }
-            public Decimal TaxesAndFeesForLowestPrice { get; set; }
-        }
-
-        public class Rooms
-        {
-            public RoomDetail Interior { get; set; }
-            public RoomDetail Oceanview { get; set; }
-            public RoomDetail Balcony { get; set; }
-            public RoomDetail Suite { get; set; }
-        }
-
-        public class RoomDetail
-        {
-            public Decimal Price { get; set; }
-            public bool SoldOut { get; set; }
-        }
-    }
-}
-
- * */
