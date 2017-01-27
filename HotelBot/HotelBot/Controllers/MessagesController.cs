@@ -37,9 +37,22 @@ namespace HotelBot
                 //        activity.From.Name
                 //        );
                 //}
-                if (activity.From == null || String.IsNullOrEmpty(activity.From.Id) || !activity.From.Id.ToLower().Contains("bco1"))
-                {
+                var cruiseSearch = true;
 
+                if (activity.From != null && !String.IsNullOrEmpty(activity.From.Name) && activity.From.Name.ToLower().Contains("bco1"))
+                {
+                    cruiseSearch = false;
+                }
+                if (cruiseSearch)
+                {
+                    if (activity.From != null && !String.IsNullOrEmpty(activity.From.Id) && activity.From.Id.ToLower().Contains("bco1"))
+                    {
+                        cruiseSearch = false;
+                    }
+                }
+
+                if (cruiseSearch)
+                {
                     await Conversation.SendAsync(activity, () => CruiseSearchDialog.dialog);
                 }
                 else
