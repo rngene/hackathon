@@ -13,7 +13,7 @@ namespace HotelBot.Dialogs
     {
         public async Task StartAsync(IDialogContext context)
         {
-            await context.PostAsync("Hi I am your Ocean Concierge");
+            await context.PostAsync("Hi, Daniel, I am your Ocean Concierge");
             context.Done("");
         }
     }

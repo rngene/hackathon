@@ -64,7 +64,7 @@ namespace HotelBot.Dialogs
 
             var message = $"Restaurant: {rest.Restaurant}, Number of people: {rest.NumberOfPeople}, Date and time: {rest.DateAndTime} ";
             SendToDashBoard("https://bco1dashboard.fwd.wf/api/restaurant_reservation", message);
-            return Chain.Return("Thank you. How can I continue helping? (restaurant reservations, room service or child care)");
+            return Chain.Return("Thank you. How can I continue helping? (restaurant reservations, room service or night owl child care)");
         }
 
         private async static Task<IDialog<string>> AfterRoomService(IBotContext context, IAwaitable<object> item)
@@ -83,6 +83,7 @@ namespace HotelBot.Dialogs
 
         private static void SendToDashBoard(string url, string message)
         {
+            message = "Guest: Daniel Ramirez. Folio: XYAB. " + message;
             using (WebClient client = new WebClient())
             {
                 JavaScriptSerializer json_serializer = new JavaScriptSerializer();
