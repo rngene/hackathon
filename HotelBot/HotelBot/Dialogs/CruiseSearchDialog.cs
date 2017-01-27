@@ -22,7 +22,7 @@ namespace HotelBot.Dialogs
                         }),
                         new DefaultCase<string, IDialog<string>>((context, text) =>
                         {
-                            return Chain.ContinueWith(FormDialog.FromForm(CruiseSearch.BuildForm, FormOptions.PromptInStart), AfterChildCare);
+                            return Chain.ContinueWith(FormDialog.FromForm(CruiseSearch.BuildForm, FormOptions.PromptInStart), AfterCruiseSearch);
                         })
             )
             .Unwrap()
@@ -41,7 +41,7 @@ namespace HotelBot.Dialogs
             //    "Hello from C#"
             //    );
 
-            return Chain.Return("Where do you to want to travel today?");
+            return Chain.Return("How can I help you? (cruise search, faqs, checkin");
         }
 
         private async static Task<IDialog<string>> AfterRestaurant(IBotContext context, IAwaitable<object> item)
@@ -63,6 +63,13 @@ namespace HotelBot.Dialogs
             var token = await item;
 
             return Chain.Return("Thank you. How can I continue helping? (restaurant reservations, room service or child care)");
+        }
+
+        private async static Task<IDialog<string>> AfterCruiseSearch(IBotContext context, IAwaitable<object> item)
+        {
+            var token = await item;
+
+            return Chain.Return("Thank you. How can I continue helping? (cruise search, faqs)");
         }
     }
 }
