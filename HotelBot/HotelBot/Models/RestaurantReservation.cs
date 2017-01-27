@@ -44,9 +44,7 @@ namespace HotelBot.Models
                 .Field(nameof(NumberOfPeople),
                             validate: async (state, value) =>
                             {
-                                var result = new ValidateResult { IsValid = true };
-                                //var values = ((int)value);
-                                //value.ToString();
+                                var result = new ValidateResult { IsValid = true, Value = value };
                                 var people = int.Parse(value.ToString());
                                 if (people >= 8)
                                 {

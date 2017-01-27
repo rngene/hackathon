@@ -8,6 +8,8 @@ using System.Web;
 using System.Threading.Tasks;
 using HotelBot.Models;
 using Twilio;
+using System.Net;
+using System.Web.Script.Serialization;
 
 namespace HotelBot.Dialogs
 {
@@ -41,7 +43,7 @@ namespace HotelBot.Dialogs
            
         private async static Task<IDialog<string>> AfterGreetingContinuation(IBotContext context, IAwaitable<object> item)
         {
-            //var token = await item;
+            var token = await item;
             //var accountSid = "ACbb85ffd271203038fea0db9c0d06d8c6"; // Your Account SID from www.twilio.com/console
             //var authToken = "39880d052d1a2048f321d0725dc6d6ae";  // Your Auth Token from www.twilio.com/console
 
@@ -58,22 +60,41 @@ namespace HotelBot.Dialogs
         private async static Task<IDialog<string>> AfterRestaurant(IBotContext context, IAwaitable<object> item)
         {
             var token = await item;
+            var rest = token as RestaurantReservation;
 
+            var message = $"Restaurant: {rest.Restaurant}, Number of people: {rest.NumberOfPeople}, Date and time: {rest.DateAndTime} ";
+            SendToDashBoard("https://bco1dashboard.fwd.wf/api/restaurant_reservation", message);
             return Chain.Return("Thank you. How can I continue helping? (restaurant reservations, room service or child care)");
         }
 
         private async static Task<IDialog<string>> AfterRoomService(IBotContext context, IAwaitable<object> item)
         {
             var token = await item;
-
+            SendToDashBoard("https://bco1dashboard.fwd.wf/api/room_service", "room service");
             return Chain.Return("Thank you. How can I continue helping? (restaurant reservations, room service or child care)");
         }
 
         private async static Task<IDialog<string>> AfterChildCare(IBotContext context, IAwaitable<object> item)
         {
             var token = await item;
-
+            SendToDashBoard("https://bco1dashboard.fwd.wf/api/child_care", "child care");
             return Chain.Return("Thank you. How can I continue helping? (restaurant reservations, room service or child care)");
+        }
+
+        private static void SendToDashBoard(string url, string message)
+        {
+            using (WebClient client = new WebClient())
+            {
+                JavaScriptSerializer json_serializer = new JavaScriptSerializer();
+                client.Headers.Add(HttpRequestHeader.ContentType, "application/json");
+                client.UploadString(new Uri(url), "POST", json_serializer.Serialize(new DashboardMessage { text = message }));
+            }
+
+        }
+
+        private class DashboardMessage
+        {
+            public string text { get; set; }
         }
     }
 }
